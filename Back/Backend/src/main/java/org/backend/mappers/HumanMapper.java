@@ -36,6 +36,4 @@ public interface HumanMapper {
         return museums.stream().map((x) -> new ShortInfo(x.getId(), x.getName())).toList();
     }
 
-
-
 }
