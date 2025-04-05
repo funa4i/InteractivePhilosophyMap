@@ -1,8 +1,14 @@
 package org.backend.domain.data.bindings;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 import java.util.List;
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class MuseumData {
     private Long id; // может быть null если создаем новое
 
@@ -12,7 +18,7 @@ public class MuseumData {
 
     private String description;
 
-    private LocalDate openData;
+    private Integer openYear;
 
     private Double x;
 

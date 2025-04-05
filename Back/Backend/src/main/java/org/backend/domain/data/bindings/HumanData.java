@@ -1,8 +1,15 @@
 package org.backend.domain.data.bindings;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 import java.util.List;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class HumanData {
     private Long id; // может быть null если создаем новое
 
@@ -12,9 +19,9 @@ public class HumanData {
 
     private String description;
 
-    private LocalDate bornDate;
+    private Integer bornYear;
 
-    private LocalDate dieDate;
+    private Integer dieYear;
 
     private Double x;
 

@@ -1,4 +1,4 @@
-package org.backend.domain.data.bindings;
+package org.backend.domain.data.views;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,10 +6,11 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class DirectionData {
+public class DirectionView {
     private Long id; // может быть null если создаем новое
 
     private String iconPath;
@@ -24,7 +25,7 @@ public class DirectionData {
 
     private Double y;
 
-    private List<Long> humanFollowersId; // id наследников
+    private List<ShortInfo> humanFollowersId; // id наследников
 
-    private List<Long> museumPresentedId; // в каких музея представлены
+    private List<ShortInfo> museumPresentedId; // в каких музея представлены
 }
