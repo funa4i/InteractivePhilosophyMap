@@ -30,5 +30,5 @@ public class HumanView {
 
     private List<ShortInfo> followHumans; // Чье мышление наследует
 
-    private List<ShortInfo> museumPresentedId; // В каких музеях представлены
+    private List<ShortInfo> museumPresented; // В каких музеях представлены
 }

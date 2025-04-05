@@ -24,7 +24,7 @@ public class DirectionData {
 
     private Double y;
 
-    private List<Long> humanFollowersId; // id наследников
+    private List<Long> humanFollowers; // id наследников
 
-    private List<Long> museumPresentedId; // в каких музея представлены
+    private List<Long> museumPresented; // в каких музея представлены
 }

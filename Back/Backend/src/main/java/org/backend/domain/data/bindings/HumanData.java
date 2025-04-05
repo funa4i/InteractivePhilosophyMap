@@ -31,5 +31,5 @@ public class HumanData {
 
     private List<Long> followHumans; // Чье мышление наследует
 
-    private List<Long> museumPresentedId; // В каких музеях представлены
+    private List<Long> museumPresented; // В каких музеях представлены
 }

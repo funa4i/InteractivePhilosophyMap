@@ -25,7 +25,7 @@ public class DirectionView {
 
     private Double y;
 
-    private List<ShortInfo> humanFollowersId; // id наследников
+    private List<ShortInfo> humanFollowers; // id наследников
 
-    private List<ShortInfo> museumPresentedId; // в каких музея представлены
+    private List<ShortInfo> museumPresented; // в каких музея представлены
 }
