@@ -24,7 +24,7 @@ public class Human {
     @Column
     private String name;
 
-    @Column
+    @Column(length = 1000)
     private String description;
 
     @Column
@@ -39,12 +39,12 @@ public class Human {
     @Column
     private Double y;
 
-    @ManyToMany(mappedBy = "followHumans")
+    @ManyToMany
     private List<Human> humanFollowers; // Наследники мышления
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "humanFollowers")
     private List<Human> followHumans; // Чье мышление наследует
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "humanRepresentative")
     private List<Museum> museumPresented; // В каких музеях представлены
 }

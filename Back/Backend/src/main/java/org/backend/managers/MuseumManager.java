@@ -51,7 +51,8 @@ public class MuseumManager {
     }
     @Transactional
     public MuseumView getById(Long id){
-        return mapper.toMuseumView(museumRepository.findById(id).get());
+        var res = museumRepository.findById(id).get();
+        return mapper.toMuseumView(res);
     }
 
     @Transactional
