@@ -1,17 +1,14 @@
 package org.backend.mappers;
 
-import java.util.List;
 import javax.annotation.processing.Generated;
 import org.backend.domain.data.bindings.DirectionData;
 import org.backend.domain.data.views.DirectionView;
 import org.backend.domain.entity.Direction;
-import org.backend.domain.entity.Human;
-import org.backend.domain.entity.Museum;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-04-06T01:43:31+0400",
+    date = "2025-04-06T16:18:54+0400",
     comments = "version: 1.6.3, compiler: javac, environment: Java 18.0.2.1 (Oracle Corporation)"
 )
 @Component
@@ -23,26 +20,15 @@ public class DirectionMapperImpl implements DirectionMapper {
             return null;
         }
 
-        Long id = null;
-        String iconPath = null;
-        String name = null;
-        String description = null;
-        Integer bornYear = null;
-        Double x = null;
-        Double y = null;
+        Direction direction = new Direction();
 
-        id = directionData.getId();
-        iconPath = directionData.getIconPath();
-        name = directionData.getName();
-        description = directionData.getDescription();
-        bornYear = directionData.getBornYear();
-        x = directionData.getX();
-        y = directionData.getY();
-
-        List<Human> humanFollowers = null;
-        List<Museum> museumPresented = null;
-
-        Direction direction = new Direction( id, iconPath, name, description, bornYear, x, y, humanFollowers, museumPresented );
+        direction.setId( directionData.getId() );
+        direction.setIconPath( directionData.getIconPath() );
+        direction.setName( directionData.getName() );
+        direction.setDescription( directionData.getDescription() );
+        direction.setBornYear( directionData.getBornYear() );
+        direction.setX( directionData.getX() );
+        direction.setY( directionData.getY() );
 
         return direction;
     }

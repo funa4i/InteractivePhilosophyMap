@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Создание философа</title>
-    <style>
+	<title>Добавить направление</title>
+	<style>
         body {
             background-color: #f9f9f9;
             color: #333;
@@ -52,10 +52,18 @@
         }
     </style>
     
-    
 </head>
 <body>
-	<div id="app"></div>
-	<script type="module" src="js/create.js"></script>
+	<h1>Создание направления</h1>
+	<form id="direction-form">
+		<p><input name="name" placeholder="Название" required /></p>
+		<p><textarea name="description" placeholder="Описание" required></textarea></p>
+		<p><input name="bornYear" type="number" placeholder="Год основания" required /></p>
+		<p><input name="humanFollowers" placeholder="ID философов (через запятую)" /></p>
+		<p><input name="museumPresented" placeholder="ID музеев (через запятую)" /></p>
+		<button type="submit">Создать направление</button>
+		<p id="message"></p>
+	</form>
+	<script type="module" src="js/create-direction.js"></script>
 </body>
 </html>

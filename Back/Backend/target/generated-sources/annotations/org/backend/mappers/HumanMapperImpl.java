@@ -1,16 +1,14 @@
 package org.backend.mappers;
 
-import java.util.List;
 import javax.annotation.processing.Generated;
 import org.backend.domain.data.bindings.HumanData;
 import org.backend.domain.data.views.HumanView;
 import org.backend.domain.entity.Human;
-import org.backend.domain.entity.Museum;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-04-06T01:43:31+0400",
+    date = "2025-04-06T16:18:54+0400",
     comments = "version: 1.6.3, compiler: javac, environment: Java 18.0.2.1 (Oracle Corporation)"
 )
 @Component
@@ -22,29 +20,16 @@ public class HumanMapperImpl implements HumanMapper {
             return null;
         }
 
-        Long id = null;
-        String iconPath = null;
-        String name = null;
-        String description = null;
-        Integer bornYear = null;
-        Integer dieYear = null;
-        Double x = null;
-        Double y = null;
+        Human human = new Human();
 
-        id = humanData.getId();
-        iconPath = humanData.getIconPath();
-        name = humanData.getName();
-        description = humanData.getDescription();
-        bornYear = humanData.getBornYear();
-        dieYear = humanData.getDieYear();
-        x = humanData.getX();
-        y = humanData.getY();
-
-        List<Human> humanFollowers = null;
-        List<Human> followHumans = null;
-        List<Museum> museumPresented = null;
-
-        Human human = new Human( id, iconPath, name, description, bornYear, dieYear, x, y, humanFollowers, followHumans, museumPresented );
+        human.setId( humanData.getId() );
+        human.setIconPath( humanData.getIconPath() );
+        human.setName( humanData.getName() );
+        human.setDescription( humanData.getDescription() );
+        human.setBornYear( humanData.getBornYear() );
+        human.setDieYear( humanData.getDieYear() );
+        human.setX( humanData.getX() );
+        human.setY( humanData.getY() );
 
         return human;
     }

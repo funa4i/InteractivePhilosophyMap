@@ -7,6 +7,15 @@ export default defineConfig({
 			'/humans': {
 				target: 'http://localhost:8006',
 				changeOrigin: true,
+			},
+			'/directions': {
+				target: 'http://localhost:8006',
+				changeOrigin: true,
+			}
+			,
+			'/museums': {
+				target: 'http://localhost:8006',
+				changeOrigin: true,
 			}
 		}
 	}
