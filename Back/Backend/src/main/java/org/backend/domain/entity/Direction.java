@@ -24,7 +24,7 @@ public class Direction {
     @Column
     private String name;
 
-    @Column
+    @Column(length = 1000)
     private String description;
 
     @Column
@@ -39,6 +39,6 @@ public class Direction {
     @ManyToMany
     private List<Human> humanFollowers; // id наследников
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "directionRepresentative")
     private List<Museum> museumPresented; // в каких музея представлены
 }

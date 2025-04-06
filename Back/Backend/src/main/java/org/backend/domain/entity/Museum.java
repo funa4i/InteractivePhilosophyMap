@@ -24,7 +24,7 @@ public class Museum {
     @Column
     private String name;
 
-    @Column
+    @Column(length = 1000)
     private String description;
 
     @Column
@@ -36,9 +36,9 @@ public class Museum {
     @Column
     private Double y;
 
-    @ManyToMany(mappedBy = "museumPresented")
+    @ManyToMany
     private List<Human> humanRepresentative; // Кто представлен в музее
 
-    @ManyToMany(mappedBy = "museumPresented")
+    @ManyToMany
     private List<Direction> directionRepresentative; // Какие направления представлены
 }
