@@ -11,8 +11,8 @@ document.getElementById('app').innerHTML = `
 		<p>Год рождения: <input name="bornDate" type="number" required /></p>
         <p>Год смерти: <input name="dieDate" type="number" /></p>
 		<p>Иконка (URL): <input name="iconPath" type="url" /></p>
-		<p>X: <input name="x" type="number" step="0.01" required /></p>
-		<p>Y: <input name="y" type="number" step="0.01" required /></p>
+		<p>X: <input name="x" type="number" step="0.00001" required /></p>
+		<p>Y: <input name="y" type="number" step="0.00001" /></p>
 		<p>ID последователей (через запятую): <input name="humanFollowers" /></p>
 		<p>ID кого наследует (через запятую): <input name="followHumans" /></p>
 		<p>ID музеев (через запятую): <input name="museumPresentedId" /></p>
