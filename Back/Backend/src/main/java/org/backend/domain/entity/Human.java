@@ -21,7 +21,7 @@ public class Human {
     @Column
     private String iconPath;
 
-    @Column
+    @Column(unique = true)
     private String name;
 
     @Column(length = 1000)
