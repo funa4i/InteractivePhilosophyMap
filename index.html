@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Карта философов (MapLibre)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" />
+        <!-- MapLibre GL JS -->
+        <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+        <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+        <!-- Vis.js -->
+        <link href="https://unpkg.com/vis-network/styles/vis-network.min.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+    </head>
+    <body>
+        <div class="search-wrapper tour-hide">
+            <input type="text" id="search-input" placeholder="🔍 Имя или фамилия | #школа | $в описании..." />
+            <div id="search-results"></div>
+        </div>        
+        <div class="slider-wrapper tour-hide">
+            <div id="range-display">1800 - 2025</div>
+            <div class="range-slider">
+              <input type="range" id="range-min" min="-1500" max="2025" value="-1500">
+              <input type="range" id="range-max" min="-1500" max="2025" value="2025">
+            </div>
+        </div>          
+        <div class="layer-toggle tour-hide">
+            <button id="toggle-philosophers" class="active" title="Философы">
+                <img src="img/brain.png" alt="Философы">
+            </button>
+            <button id="toggle-museums"  class="active" title="Музеи">
+                <img src="img/museum.png" alt="Музеи">
+            </button>
+            <button id="toggle-filter" title="Фильтр по школам">
+                <img src="img/filter.png" alt="Фильтр">
+            </button>
+        </div>
+        
+        <div id="filter-sidebar tour-hide" class="sidebar">
+            <h3>Школа философии</h3>
+            <ul id="school-list">
+            </ul>
+        </div>
+
+        <button id="start-tour">🧭 Начать экскурсию</button>
+        <button id="stop-tour" style="display: none;">⛔ Остановить</button>
+        
+        <div id="philosopher-details" class="details-overlay hidden">
+            <div class="details-content">
+                <button id="close-details">✖</button>
+                <img id="details-icon" src="" alt="icon" />
+                <h2 id="details-name" style="margin-bottom: 0;"></h2>
+                <span id="details-born-died"></span></p>
+                <p><strong>Описание:</strong></p>
+                <p id="details-desc"></p>
+                <p><strong>Координаты:</strong> <span id="details-coords"></span></p>
+                <strong>Связи:</strong>
+                <div id="influence-graph" style="height: 300px; border: 1px solid #ccc;"></div>
+                <button id="expand-graph" class="expand-btn">Показать дальше</button>
+                <div class="graph-legend">
+                    <div><span class="legend-dot yellow"></span> — Текущий философ</div>
+                    <div><span class="legend-dot red"></span> — Те, чьё мышление он наследует</div>
+                    <div><span class="legend-dot blue"></span> — Его наследники</div>
+                </div>
+                <p><strong>Музеи:</strong> <span id="details-museums"></span></p>
+            </div>         
+        </div>
+        
+
+        <div id="map"></div>
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>

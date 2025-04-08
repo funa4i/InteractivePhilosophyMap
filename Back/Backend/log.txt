@@ -1,0 +1,1472 @@
+Apache Maven Daemon (mvnd) 1.0.2 windows-amd64 native client (cccc1ec8a5b741c62b29f9fb04d37b1678a029bb)
+Terminal: org.jline.terminal.impl.jni.win.NativeWinSysTerminal
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn
+Java version: 18.0.2.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-18.0.2.1
+Default locale: ru_RU, platform encoding: UTF-8
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+[DEBUG] Reading global settings from C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\busla\.m2\settings.xml
+[DEBUG] Reading global toolchains from C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\conf\toolchains.xml
+[DEBUG] Reading user toolchains from C:\Users\busla\.m2\toolchains.xml
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: plain
+[INFO] Processing build on daemon 2bed350a
+[DEBUG] Using local repository at C:\Users\busla\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\busla\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project org.backend:Backend:jar:1.0: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Creating adapter using nameMapper 'file-gav' and factory 'file-lock'
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:3.3.2: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:3.3.2: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[INFO] BuildTimeEventSpy is registered.
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM org.backend:Backend:jar:1.0
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: org.backend:Backend:jar:1.0
+[DEBUG] Tasks:   [spring-boot:run]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] Using the SmartBuilder implementation with a thread count of 11
+[DEBUG] Task segments : [[spring-boot:run]]
+[DEBUG] Build maximum degree of concurrency is 11
+[DEBUG] Total number of projects is 1
+[DEBUG] Ready org.backend:Backend
+[DEBUG] STARTED build of project org.backend:Backend
+[INFO] 
+[INFO] ------------------------< org.backend:Backend >-------------------------
+[INFO] Building Backend 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM org.backend:Backend:jar:1.0
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.backend:Backend:1.0
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] --- init fork of org.backend:Backend:1.0 for org.springframework.boot:spring-boot-maven-plugin:3.3.2:run (default-cli) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPaths>
+    <path>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>1.6.3</version>
+    </path>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.34</version>
+    </path>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok-mapstruct-binding</artifactId>
+      <version>0.2.0</version>
+    </path>
+  </annotationProcessorPaths>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}">${maven.compiler.outputDirectory}</outputDirectory>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">true</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPaths>
+    <path>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>1.6.3</version>
+    </path>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.34</version>
+    </path>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok-mapstruct-binding</artifactId>
+      <version>0.2.0</version>
+    </path>
+  </annotationProcessorPaths>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">true</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModulePath default-value="true"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] --- exit fork of org.backend:Backend:1.0 for org.springframework.boot:spring-boot-maven-plugin:3.3.2:run (default-cli) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.springframework.boot:spring-boot-maven-plugin:3.3.2:run (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addResources default-value="false">${spring-boot.run.addResources}</addResources>
+  <additionalClasspathElements>${spring-boot.run.additional-classpath-elements}</additionalClasspathElements>
+  <agents>${spring-boot.run.agents}</agents>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <commandlineArguments>${spring-boot.run.arguments}</commandlineArguments>
+  <directories>${spring-boot.run.directories}</directories>
+  <excludeGroupIds default-value="">${spring-boot.excludeGroupIds}</excludeGroupIds>
+  <excludes>${spring-boot.excludes}</excludes>
+  <includes>${spring-boot.includes}</includes>
+  <jvmArguments>${spring-boot.run.jvmArguments}</jvmArguments>
+  <mainClass>${start-class}</mainClass>
+  <noverify>${spring-boot.run.noverify}</noverify>
+  <optimizedLaunch default-value="true">${spring-boot.run.optimizedLaunch}</optimizedLaunch>
+  <profiles>${spring-boot.run.profiles}</profiles>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${spring-boot.run.skip}</skip>
+  <useTestClasspath default-value="false">${spring-boot.run.useTestClasspath}</useTestClasspath>
+  <workingDirectory>${spring-boot.run.workingDirectory}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] >>> spring-boot:3.3.2:run (default-cli) > test-compile @ Backend >>>
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-snapshots (http://oss.sonatype.org/content/repositories/vaadin-snapshots/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-releases (http://oss.sonatype.org/content/repositories/vaadin-releases/).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=112100, ConflictMarker.markTime=52000, ConflictMarker.nodeCount=178, ConflictIdSorter.graphTime=39900, ConflictIdSorter.topsortTime=38300, ConflictIdSorter.conflictIdCount=93, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1095800, ConflictResolver.conflictItemCount=174, DfDependencyCollector.collectTime=176051000, DfDependencyCollector.transformTime=1380300}
+[DEBUG] org.backend:Backend:jar:1.0
+[DEBUG]    org.postgresql:postgresql:jar:42.7.3:compile
+[DEBUG]       org.checkerframework:checker-qual:jar:3.42.0:runtime
+[DEBUG]    org.springframework.boot:spring-boot-starter-test:jar:3.3.2:test
+[DEBUG]       org.springframework.boot:spring-boot-starter:jar:3.3.2:compile (version managed from 3.3.2)
+[DEBUG]          org.springframework.boot:spring-boot:jar:3.3.2:compile (version managed from 3.3.2)
+[DEBUG]          org.springframework.boot:spring-boot-autoconfigure:jar:3.3.2:compile (version managed from 3.3.2)
+[DEBUG]          org.springframework.boot:spring-boot-starter-logging:jar:3.3.2:compile (version managed from 3.3.2)
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.5.6:compile (version managed from 1.5.6)
+[DEBUG]                ch.qos.logback:logback-core:jar:1.5.6:compile (version managed from 1.5.6)
+[DEBUG]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.23.1:compile (version managed from 2.23.1)
+[DEBUG]                org.apache.logging.log4j:log4j-api:jar:2.23.1:compile (version managed from 2.23.1)
+[DEBUG]             org.slf4j:jul-to-slf4j:jar:2.0.13:compile (version managed from 2.0.13)
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile (version managed from 2.1.1)
+[DEBUG]          org.yaml:snakeyaml:jar:2.2:compile (version managed from 2.2)
+[DEBUG]       org.springframework.boot:spring-boot-test:jar:3.3.2:test (version managed from 3.3.2)
+[DEBUG]       org.springframework.boot:spring-boot-test-autoconfigure:jar:3.3.2:test (version managed from 3.3.2)
+[DEBUG]       com.jayway.jsonpath:json-path:jar:2.9.0:test (version managed from 2.9.0)
+[DEBUG]          org.slf4j:slf4j-api:jar:2.0.13:compile (version managed from 2.0.11)
+[DEBUG]       jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:runtime (version managed from 4.0.2)
+[DEBUG]          jakarta.activation:jakarta.activation-api:jar:2.1.3:runtime (version managed from 2.1.3)
+[DEBUG]       net.minidev:json-smart:jar:2.5.1:test (version managed from 2.5.1)
+[DEBUG]          net.minidev:accessors-smart:jar:2.5.1:test
+[DEBUG]             org.ow2.asm:asm:jar:9.6:test
+[DEBUG]       org.assertj:assertj-core:jar:3.25.3:test (version managed from 3.25.3)
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.14.18:runtime (version managed from 1.14.11)
+[DEBUG]       org.awaitility:awaitility:jar:4.2.1:test (version managed from 4.2.1)
+[DEBUG]       org.hamcrest:hamcrest:jar:2.2:test (version managed from 2.2)
+[DEBUG]       org.junit.jupiter:junit-jupiter:jar:5.10.3:test (version managed from 5.10.3)
+[DEBUG]          org.junit.jupiter:junit-jupiter-api:jar:5.10.3:test (version managed from 5.10.3)
+[DEBUG]             org.opentest4j:opentest4j:jar:1.3.0:test
+[DEBUG]             org.junit.platform:junit-platform-commons:jar:1.10.3:test (version managed from 1.10.3)
+[DEBUG]             org.apiguardian:apiguardian-api:jar:1.1.2:test
+[DEBUG]          org.junit.jupiter:junit-jupiter-params:jar:5.10.3:test (version managed from 5.10.3)
+[DEBUG]          org.junit.jupiter:junit-jupiter-engine:jar:5.10.3:test (version managed from 5.10.3)
+[DEBUG]             org.junit.platform:junit-platform-engine:jar:1.10.3:test (version managed from 1.10.3)
+[DEBUG]       org.mockito:mockito-core:jar:5.11.0:test (version managed from 5.11.0)
+[DEBUG]          net.bytebuddy:byte-buddy-agent:jar:1.14.18:test (version managed from 1.14.12)
+[DEBUG]          org.objenesis:objenesis:jar:3.3:test
+[DEBUG]       org.mockito:mockito-junit-jupiter:jar:5.11.0:test (version managed from 5.11.0)
+[DEBUG]       org.skyscreamer:jsonassert:jar:1.5.3:test (version managed from 1.5.3)
+[DEBUG]          com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[DEBUG]       org.springframework:spring-core:jar:6.1.11:compile (version managed from 6.1.11)
+[DEBUG]          org.springframework:spring-jcl:jar:6.1.11:compile (version managed from 6.1.11)
+[DEBUG]       org.springframework:spring-test:jar:6.1.11:test (version managed from 6.1.11)
+[DEBUG]       org.xmlunit:xmlunit-core:jar:2.9.1:test (version managed from 2.9.1)
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-jpa:jar:3.2.4:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-aop:jar:3.3.2:compile (version managed from 3.2.4)
+[DEBUG]          org.springframework:spring-aop:jar:6.1.11:compile (version managed from 6.1.11)
+[DEBUG]          org.aspectj:aspectjweaver:jar:1.9.22.1:compile (version managed from 1.9.22.1)
+[DEBUG]       org.springframework.boot:spring-boot-starter-jdbc:jar:3.3.2:compile (version managed from 3.2.4)
+[DEBUG]          com.zaxxer:HikariCP:jar:5.1.0:compile (version managed from 5.1.0)
+[DEBUG]          org.springframework:spring-jdbc:jar:6.1.11:compile (version managed from 6.1.11)
+[DEBUG]       org.hibernate.orm:hibernate-core:jar:6.5.2.Final:compile (version managed from 6.4.4.Final)
+[DEBUG]          jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile (version managed from 3.1.0)
+[DEBUG]          jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile (version managed from 2.0.1)
+[DEBUG]          org.jboss.logging:jboss-logging:jar:3.5.3.Final:runtime (version managed from 3.5.0.Final)
+[DEBUG]          org.hibernate.common:hibernate-commons-annotations:jar:6.0.6.Final:runtime
+[DEBUG]          io.smallrye:jandex:jar:3.1.2:runtime
+[DEBUG]          com.fasterxml:classmate:jar:1.7.0:runtime (version managed from 1.5.1)
+[DEBUG]          org.glassfish.jaxb:jaxb-runtime:jar:4.0.5:runtime (version managed from 4.0.2)
+[DEBUG]             org.glassfish.jaxb:jaxb-core:jar:4.0.5:runtime (version managed from 4.0.5)
+[DEBUG]                org.eclipse.angus:angus-activation:jar:2.0.2:runtime (version managed from 2.0.2)
+[DEBUG]                org.glassfish.jaxb:txw2:jar:4.0.5:runtime (version managed from 4.0.5)
+[DEBUG]                com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime (version managed from 4.1.2)
+[DEBUG]          jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime (version managed from 2.0.1)
+[DEBUG]          org.antlr:antlr4-runtime:jar:4.13.0:compile
+[DEBUG]       org.springframework.data:spring-data-jpa:jar:3.3.2:compile (version managed from 3.2.4)
+[DEBUG]          org.springframework.data:spring-data-commons:jar:3.3.2:compile (version managed from 3.3.2)
+[DEBUG]          org.springframework:spring-orm:jar:6.1.11:compile (version managed from 6.1.9)
+[DEBUG]          org.springframework:spring-context:jar:6.1.11:compile (version managed from 6.1.9)
+[DEBUG]          org.springframework:spring-tx:jar:6.1.11:compile (version managed from 6.1.9)
+[DEBUG]          org.springframework:spring-beans:jar:6.1.11:compile (version managed from 6.1.9)
+[DEBUG]       org.springframework:spring-aspects:jar:6.1.11:compile (version managed from 6.1.5)
+[DEBUG]    org.springframework.boot:spring-boot-starter-web:jar:3.3.2:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-json:jar:3.3.2:compile (version managed from 3.3.2)
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]             com.fasterxml.jackson.core:jackson-core:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]       org.springframework.boot:spring-boot-starter-tomcat:jar:3.3.2:compile (version managed from 3.3.2)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.26:compile (version managed from 10.1.26)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.26:compile (version managed from 10.1.26)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.26:compile (version managed from 10.1.26)
+[DEBUG]       org.springframework:spring-web:jar:6.1.11:compile (version managed from 6.1.11)
+[DEBUG]          io.micrometer:micrometer-observation:jar:1.13.2:compile (version managed from 1.12.8)
+[DEBUG]             io.micrometer:micrometer-commons:jar:1.13.2:compile (version managed from 1.13.2)
+[DEBUG]       org.springframework:spring-webmvc:jar:6.1.11:compile (version managed from 6.1.11)
+[DEBUG]          org.springframework:spring-expression:jar:6.1.11:compile (version managed from 6.1.11)
+[DEBUG]    org.projectlombok:lombok:jar:1.18.34:provided
+[DEBUG]    org.projectlombok:lombok-mapstruct-binding:jar:0.2.0:compile
+[DEBUG]    org.mapstruct:mapstruct:jar:1.6.3:compile
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\postgresql\postgresql\42.7.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\checkerframework\checker-qual\3.42.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\ch\qos\logback\logback-classic\1.5.6
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\ch\qos\logback\logback-core\1.5.6
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\yaml\snakeyaml\2.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-test\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\jayway\jsonpath\json-path\2.9.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\slf4j\slf4j-api\2.0.13
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\net\minidev\json-smart\2.5.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\net\minidev\accessors-smart\2.5.1
+[DEBUG] Already 6 watchers for path C:\Users\busla\.m2\repository\org\ow2\asm\asm\9.6
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\assertj\assertj-core\3.25.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\net\bytebuddy\byte-buddy\1.14.18
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\awaitility\awaitility\4.2.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\hamcrest\hamcrest\2.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\opentest4j\opentest4j\1.3.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\apiguardian\apiguardian-api\1.1.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\mockito\mockito-core\5.11.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\objenesis\objenesis\3.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\skyscreamer\jsonassert\1.5.3
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1
+[DEBUG] Already 6 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-core\6.1.11
+[DEBUG] Already 6 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-jcl\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-test\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\xmlunit\xmlunit-core\2.9.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.4
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.2
+[DEBUG] Already 6 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-aop\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\zaxxer\HikariCP\5.1.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-jdbc\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\io\smallrye\jandex\3.1.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\fasterxml\classmate\1.7.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\eclipse\angus\angus-activation\2.0.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\glassfish\jaxb\txw2\4.0.5
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\antlr\antlr4-runtime\4.13.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\data\spring-data-commons\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-orm\6.1.11
+[DEBUG] Already 6 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-context\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-tx\6.1.11
+[DEBUG] Already 6 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-beans\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-aspects\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-web\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\io\micrometer\micrometer-observation\1.13.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\io\micrometer\micrometer-commons\1.13.2
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-webmvc\6.1.11
+[DEBUG] Already 6 watchers for path C:\Users\busla\.m2\repository\org\springframework\spring-expression\6.1.11
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\projectlombok\lombok\1.18.34
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\projectlombok\lombok-mapstruct-binding\0.2.0
+[DEBUG] Already 5 watchers for path C:\Users\busla\.m2\repository\org\mapstruct\mapstruct\1.6.3
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Backend ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@3cd1a2f1]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: org.backend:Backend:1.0 @ C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1d332cfc
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] activemq.version: 6.1.2
+[DEBUG] angus-mail.version: 2.0.3
+[DEBUG] artemis.version: 2.33.0
+[DEBUG] aspectj.version: 1.9.22.1
+[DEBUG] assertj.version: 3.25.3
+[DEBUG] awaitility.version: 4.2.1
+[DEBUG] brave.version: 6.0.3
+[DEBUG] build-helper-maven-plugin.version: 3.5.0
+[DEBUG] byte-buddy.version: 1.14.18
+[DEBUG] cache2k.version: 2.6.1.Final
+[DEBUG] caffeine.version: 3.1.8
+[DEBUG] cassandra-driver.version: 4.18.1
+[DEBUG] classmate.version: 1.7.0
+[DEBUG] classworlds.conf: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\bin\mvnd-daemon.conf
+[DEBUG] commons-codec.version: 1.16.1
+[DEBUG] commons-dbcp2.version: 2.12.0
+[DEBUG] commons-lang3.version: 3.14.0
+[DEBUG] commons-pool.version: 1.6
+[DEBUG] commons-pool2.version: 2.12.0
+[DEBUG] couchbase-client.version: 3.6.2
+[DEBUG] crac.version: 1.4.0
+[DEBUG] cyclonedx-maven-plugin.version: 2.8.0
+[DEBUG] db2-jdbc.version: 11.5.9.0
+[DEBUG] dependency-management-plugin.version: 1.1.6
+[DEBUG] derby.version: 10.16.1.1
+[DEBUG] ehcache3.version: 3.10.8
+[DEBUG] elasticsearch-client.version: 8.13.4
+[DEBUG] env.=C:: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] env.=ExitCode: 00000001
+[DEBUG] env.ALLUSERSPROFILE: C:\ProgramData
+[DEBUG] env.APPDATA: C:\Users\busla\AppData\Roaming
+[DEBUG] env.COMPUTERNAME: ROM
+[DEBUG] env.ComSpec: C:\Windows\system32\cmd.exe
+[DEBUG] env.CommonProgramFiles: C:\Program Files\Common Files
+[DEBUG] env.CommonProgramFiles(x86): C:\Program Files (x86)\Common Files
+[DEBUG] env.CommonProgramW6432: C:\Program Files\Common Files
+[DEBUG] env.DriverData: C:\Windows\System32\Drivers\DriverData
+[DEBUG] env.HOMEDRIVE: C:
+[DEBUG] env.HOMEPATH: \Users\busla
+[DEBUG] env.LOCALAPPDATA: C:\Users\busla\AppData\Local
+[DEBUG] env.LOGONSERVER: \\ROM
+[DEBUG] env.NUMBER_OF_PROCESSORS: 12
+[DEBUG] env.OS: Windows_NT
+[DEBUG] env.OneDrive: C:\Users\busla\OneDrive
+[DEBUG] env.PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+[DEBUG] env.PROCESSOR_ARCHITECTURE: AMD64
+[DEBUG] env.PROCESSOR_IDENTIFIER: Intel64 Family 6 Model 165 Stepping 3, GenuineIntel
+[DEBUG] env.PROCESSOR_LEVEL: 6
+[DEBUG] env.PROCESSOR_REVISION: a503
+[DEBUG] env.PROMPT: $P$G
+[DEBUG] env.PSModulePath: C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+[DEBUG] env.PUBLIC: C:\Users\Public
+[DEBUG] env.PWD: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] env.Path: C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\bin;C:\Users\busla\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\busla\AppData\Local\Programs\Python\Python311\;C:\Users\busla\AppData\Local\Microsoft\WindowsApps;C:\Users\busla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\busla\.dotnet\tools;C:\msys64\ucrt64\bin;C:\Users\busla\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\busla\AppData\Roaming\npm
+[DEBUG] env.ProgramData: C:\ProgramData
+[DEBUG] env.ProgramFiles: C:\Program Files
+[DEBUG] env.ProgramFiles(x86): C:\Program Files (x86)
+[DEBUG] env.ProgramW6432: C:\Program Files
+[DEBUG] env.SESSIONNAME: Console
+[DEBUG] env.SystemDrive: C:
+[DEBUG] env.SystemRoot: C:\Windows
+[DEBUG] env.TEMP: C:\Users\busla\AppData\Local\Temp
+[DEBUG] env.TMP: C:\Users\busla\AppData\Local\Temp
+[DEBUG] env.USERDOMAIN: ROM
+[DEBUG] env.USERDOMAIN_ROAMINGPROFILE: ROM
+[DEBUG] env.USERNAME: busla
+[DEBUG] env.USERPROFILE: C:\Users\busla
+[DEBUG] env.maven: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\bin
+[DEBUG] env.windir: C:\Windows
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: \
+[DEBUG] flyway.version: 10.10.0
+[DEBUG] freemarker.version: 2.3.33
+[DEBUG] git-commit-id-maven-plugin.version: 8.0.2
+[DEBUG] glassfish-jaxb.version: 4.0.5
+[DEBUG] glassfish-jstl.version: 3.0.1
+[DEBUG] graphql-java.version: 22.1
+[DEBUG] groovy.version: 4.0.22
+[DEBUG] gson.version: 2.10.1
+[DEBUG] guice.disable.misplaced.annotation.check: true
+[DEBUG] h2.version: 2.2.224
+[DEBUG] hamcrest.version: 2.2
+[DEBUG] hazelcast.version: 5.4.0
+[DEBUG] hibernate-validator.version: 8.0.1.Final
+[DEBUG] hibernate.version: 6.5.2.Final
+[DEBUG] hikaricp.version: 5.1.0
+[DEBUG] hsqldb.version: 2.7.3
+[DEBUG] htmlunit.version: 2.70.0
+[DEBUG] httpasyncclient.version: 4.1.5
+[DEBUG] httpclient5.version: 5.3.1
+[DEBUG] httpcore.version: 4.4.16
+[DEBUG] httpcore5.version: 5.2.5
+[DEBUG] infinispan.version: 15.0.5.Final
+[DEBUG] influxdb-java.version: 2.24
+[DEBUG] jackson-bom.version: 2.17.2
+[DEBUG] jakarta-activation.version: 2.1.3
+[DEBUG] jakarta-annotation.version: 2.1.1
+[DEBUG] jakarta-inject.version: 2.0.1
+[DEBUG] jakarta-jms.version: 3.1.0
+[DEBUG] jakarta-json-bind.version: 3.0.1
+[DEBUG] jakarta-json.version: 2.1.3
+[DEBUG] jakarta-mail.version: 2.1.3
+[DEBUG] jakarta-management.version: 1.1.4
+[DEBUG] jakarta-persistence.version: 3.1.0
+[DEBUG] jakarta-servlet-jsp-jstl.version: 3.0.0
+[DEBUG] jakarta-servlet.version: 6.0.0
+[DEBUG] jakarta-transaction.version: 2.0.1
+[DEBUG] jakarta-validation.version: 3.0.2
+[DEBUG] jakarta-websocket.version: 2.1.1
+[DEBUG] jakarta-ws-rs.version: 3.1.0
+[DEBUG] jakarta-xml-bind.version: 4.0.2
+[DEBUG] jakarta-xml-soap.version: 3.0.2
+[DEBUG] jakarta-xml-ws.version: 4.0.2
+[DEBUG] janino.version: 3.1.12
+[DEBUG] java.class.path: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\boot\plexus-classworlds-2.8.0.jar
+[DEBUG] java.class.version: 62.0
+[DEBUG] java.home: C:\Program Files\Java\jdk-18.0.2.1
+[DEBUG] java.io.tmpdir: C:\Users\busla\AppData\Local\Temp\
+[DEBUG] java.library.path: C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\busla\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\busla\AppData\Local\Programs\Python\Python311\;C:\Users\busla\AppData\Local\Microsoft\WindowsApps;C:\Users\busla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\busla\.dotnet\tools;C:\msys64\ucrt64\bin;C:\Users\busla\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\busla\AppData\Roaming\npm;.
+[DEBUG] java.runtime.name: Java(TM) SE Runtime Environment
+[DEBUG] java.runtime.version: 18.0.2.1+1-1
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 18
+[DEBUG] java.util.logging.config.file: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\conf/logging/java.util.logging.properties
+[DEBUG] java.vendor: Oracle Corporation
+[DEBUG] java.vendor.url: https://java.oracle.com/
+[DEBUG] java.vendor.url.bug: https://bugreport.java.com/bugreport/
+[DEBUG] java.version: 18.0.2.1
+[DEBUG] java.version.date: 2022-08-18
+[DEBUG] java.vm.compressedOopsMode: Zero based
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 18
+[DEBUG] java.vm.vendor: Oracle Corporation
+[DEBUG] java.vm.version: 18.0.2.1+1-1
+[DEBUG] javax-cache.version: 1.1.1
+[DEBUG] javax-money.version: 1.1
+[DEBUG] jaxen.version: 2.0.0
+[DEBUG] jaybird.version: 5.0.5.java11
+[DEBUG] jboss-logging.version: 3.5.3.Final
+[DEBUG] jdk.debug: release
+[DEBUG] jdk.java.options: --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/sun.net.www.protocol.jar=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED
+[DEBUG] jdom2.version: 2.0.6.1
+[DEBUG] jedis.version: 5.0.2
+[DEBUG] jersey.version: 3.1.7
+[DEBUG] jetty-reactive-httpclient.version: 4.0.5
+[DEBUG] jetty.version: 12.0.11
+[DEBUG] jmustache.version: 1.16
+[DEBUG] jooq.version: 3.19.10
+[DEBUG] json-path.version: 2.9.0
+[DEBUG] json-smart.version: 2.5.1
+[DEBUG] jsonassert.version: 1.5.3
+[DEBUG] jtds.version: 1.3.1
+[DEBUG] junit-jupiter.version: 5.10.3
+[DEBUG] junit.version: 4.13.2
+[DEBUG] kafka.version: 3.7.1
+[DEBUG] kotlin-coroutines.version: 1.8.1
+[DEBUG] kotlin-serialization.version: 1.6.3
+[DEBUG] kotlin.version: 1.9.24
+[DEBUG] lettuce.version: 6.3.2.RELEASE
+[DEBUG] line.separator: 
+[DEBUG] liquibase.version: 4.27.0
+[DEBUG] log4j2.version: 2.23.1
+[DEBUG] logback.version: 1.5.6
+[DEBUG] lombok-mapstruct-binding.version: 0.2.0
+[DEBUG] lombok.version: 1.18.34
+[DEBUG] mariadb.version: 3.3.3
+[DEBUG] maven-antrun-plugin.version: 3.1.0
+[DEBUG] maven-assembly-plugin.version: 3.7.1
+[DEBUG] maven-clean-plugin.version: 3.3.2
+[DEBUG] maven-compiler-plugin.version: 3.13.0
+[DEBUG] maven-dependency-plugin.version: 3.6.1
+[DEBUG] maven-deploy-plugin.version: 3.1.2
+[DEBUG] maven-enforcer-plugin.version: 3.4.1
+[DEBUG] maven-failsafe-plugin.version: 3.2.5
+[DEBUG] maven-help-plugin.version: 3.4.1
+[DEBUG] maven-install-plugin.version: 3.1.2
+[DEBUG] maven-invoker-plugin.version: 3.6.1
+[DEBUG] maven-jar-plugin.version: 3.4.2
+[DEBUG] maven-javadoc-plugin.version: 3.6.3
+[DEBUG] maven-resources-plugin.version: 3.3.1
+[DEBUG] maven-shade-plugin.version: 3.5.3
+[DEBUG] maven-source-plugin.version: 3.3.1
+[DEBUG] maven-surefire-plugin.version: 3.2.5
+[DEBUG] maven-war-plugin.version: 3.4.0
+[DEBUG] maven.build.timestamp: 2025-04-05T20:57:02Z
+[DEBUG] maven.build.version: Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+[DEBUG] maven.compiler.release: 17
+[DEBUG] maven.conf: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\conf
+[DEBUG] maven.home: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn
+[DEBUG] maven.multiModuleProjectDirectory: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] maven.version: 3.9.9
+[DEBUG] micrometer-tracing.version: 1.3.2
+[DEBUG] micrometer.version: 1.13.2
+[DEBUG] mockito.version: 5.11.0
+[DEBUG] mongodb.version: 5.0.1
+[DEBUG] mssql-jdbc.version: 12.6.3.jre11
+[DEBUG] mvnd.coreExtensions: 
+[DEBUG] mvnd.daemonStorage: C:\Users\busla\.m2\mvnd\registry\1.0.2
+[DEBUG] mvnd.debug: false
+[DEBUG] mvnd.debug.address: 8000
+[DEBUG] mvnd.duplicateDaemonGracePeriod: 10s
+[DEBUG] mvnd.enableAssertions: false
+[DEBUG] mvnd.expirationCheckDelay: 10s
+[DEBUG] mvnd.extClasspath: 
+[DEBUG] mvnd.home: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64
+[DEBUG] mvnd.id: 2bed350a
+[DEBUG] mvnd.idleTimeout: 3h
+[DEBUG] mvnd.java.home: C:\Program Files\Java\jdk-18.0.2.1
+[DEBUG] mvnd.keepAlive: 100ms
+[DEBUG] mvnd.noDaemon: false
+[DEBUG] mvnd.registry: C:\Users\busla\.m2\mvnd\registry\1.0.2\registry.bin
+[DEBUG] mvnd.socketFamily: inet
+[DEBUG] mvnd.terminalWidth: 120
+[DEBUG] mysql.version: 8.3.0
+[DEBUG] native-build-tools-plugin.version: 0.10.2
+[DEBUG] native.encoding: Cp1251
+[DEBUG] nekohtml.version: 1.9.22
+[DEBUG] neo4j-java-driver.version: 5.22.0
+[DEBUG] netty.version: 4.1.111.Final
+[DEBUG] okhttp.version: 4.12.0
+[DEBUG] opentelemetry.version: 1.37.0
+[DEBUG] oracle-database.version: 21.9.0.0
+[DEBUG] oracle-r2dbc.version: 1.2.0
+[DEBUG] org.flywaydb.version: 10.18.0
+[DEBUG] org.lombok.version: 1.18.34
+[DEBUG] org.mapstruct.version: 1.6.3
+[DEBUG] org.slf4j.simpleLogger.logFile: C:\Users\busla\.m2\mvnd\registry\1.0.2\daemon-2bed350a.log
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Windows 10
+[DEBUG] os.version: 10.0
+[DEBUG] path.separator: ;
+[DEBUG] pooled-jms.version: 3.1.6
+[DEBUG] postgresql.version: 42.7.3
+[DEBUG] project.baseUri: file:/C:/Users/busla/source/repos/InteractivePhilosophyMap/Back/Backend/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] prometheus-client.version: 1.2.1
+[DEBUG] prometheus-simpleclient.version: 0.16.0
+[DEBUG] pulsar-reactive.version: 0.5.6
+[DEBUG] pulsar.version: 3.2.3
+[DEBUG] quartz.version: 2.3.2
+[DEBUG] querydsl.version: 5.1.0
+[DEBUG] r2dbc-h2.version: 1.0.0.RELEASE
+[DEBUG] r2dbc-mariadb.version: 1.2.1
+[DEBUG] r2dbc-mssql.version: 1.0.2.RELEASE
+[DEBUG] r2dbc-mysql.version: 1.1.3
+[DEBUG] r2dbc-pool.version: 1.0.1.RELEASE
+[DEBUG] r2dbc-postgresql.version: 1.0.5.RELEASE
+[DEBUG] r2dbc-proxy.version: 1.1.5.RELEASE
+[DEBUG] r2dbc-spi.version: 1.0.0.RELEASE
+[DEBUG] rabbit-amqp-client.version: 5.21.0
+[DEBUG] rabbit-stream-client.version: 0.15.0
+[DEBUG] reactive-streams.version: 1.0.4
+[DEBUG] reactor-bom.version: 2023.0.8
+[DEBUG] resource.delimiter: @
+[DEBUG] rest-assured.version: 5.4.0
+[DEBUG] rsocket.version: 1.1.3
+[DEBUG] rxjava3.version: 3.1.8
+[DEBUG] saaj-impl.version: 3.0.4
+[DEBUG] selenium-htmlunit.version: 4.13.0
+[DEBUG] selenium.version: 4.19.1
+[DEBUG] sendgrid.version: 4.10.2
+[DEBUG] slf4j.version: 2.0.13
+[DEBUG] snakeyaml.version: 2.2
+[DEBUG] spring-amqp.version: 3.1.6
+[DEBUG] spring-authorization-server.version: 1.3.1
+[DEBUG] spring-batch.version: 5.1.2
+[DEBUG] spring-boot.run.main-class: ${start-class}
+[DEBUG] spring-data-bom.version: 2024.0.2
+[DEBUG] spring-framework.version: 6.1.11
+[DEBUG] spring-graphql.version: 1.3.2
+[DEBUG] spring-hateoas.version: 2.3.1
+[DEBUG] spring-integration.version: 6.3.2
+[DEBUG] spring-kafka.version: 3.2.2
+[DEBUG] spring-ldap.version: 3.2.4
+[DEBUG] spring-pulsar.version: 1.1.2
+[DEBUG] spring-restdocs.version: 3.0.1
+[DEBUG] spring-retry.version: 2.0.7
+[DEBUG] spring-security.version: 6.3.1
+[DEBUG] spring-session.version: 3.3.1
+[DEBUG] spring-ws.version: 4.0.11
+[DEBUG] sqlite-jdbc.version: 3.45.3.0
+[DEBUG] style.color: never
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: C:\Program Files\Java\jdk-18.0.2.1\bin
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.cpu.isalist: amd64
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: Cp1251
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] sun.os.patch.level: 
+[DEBUG] testcontainers.version: 1.19.8
+[DEBUG] thymeleaf-extras-data-attribute.version: 2.0.1
+[DEBUG] thymeleaf-extras-springsecurity.version: 3.1.2.RELEASE
+[DEBUG] thymeleaf-layout-dialect.version: 3.3.0
+[DEBUG] thymeleaf.version: 3.1.2.RELEASE
+[DEBUG] tomcat.version: 10.1.26
+[DEBUG] unboundid-ldapsdk.version: 6.0.11
+[DEBUG] undertow.version: 2.3.13.Final
+[DEBUG] user.country: RU
+[DEBUG] user.dir: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] user.home: C:\Users\busla
+[DEBUG] user.language: ru
+[DEBUG] user.name: busla
+[DEBUG] user.script: 
+[DEBUG] user.timezone: Europe/Astrakhan
+[DEBUG] user.variant: 
+[DEBUG] versions-maven-plugin.version: 2.16.2
+[DEBUG] webjars-locator-core.version: 0.58
+[DEBUG] wsdl4j.version: 1.6.3
+[DEBUG] xml-maven-plugin.version: 1.1.0
+[DEBUG] xmlunit2.version: 2.9.1
+[DEBUG] yasson.version: 3.0.3
+[DEBUG] zipkin-reporter.version: 3.4.0
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[DEBUG] Copying file application.yml
+[DEBUG] file application.yml has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application.yml'.
+[DEBUG] filtering C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\resources\application.yml to C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes\application.yml
+[DEBUG] resource with targetPath null
+directory C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ Backend ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@3cd1a2f1]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (s) groupId = org.mapstruct
+[DEBUG]   (s) artifactId = mapstruct-processor
+[DEBUG]   (s) version = 1.6.3
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok
+[DEBUG]   (s) version = 1.18.34
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok-mapstruct-binding
+[DEBUG]   (s) version = 0.2.0
+[DEBUG]   (f) annotationProcessorPaths = [org.mapstruct:mapstruct-processor:1.6.3.jar, org.projectlombok:lombok:1.18.34.jar, org.projectlombok:lombok-mapstruct-binding:0.2.0.jar]
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG]   (f) buildDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target
+[DEBUG]   (f) compilePath = [C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes, C:\Users\busla\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.2\spring-boot-starter-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot\3.3.2\spring-boot-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2\spring-boot-autoconfigure-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.2\spring-boot-starter-logging-3.3.2.jar, C:\Users\busla\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar, C:\Users\busla\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar, C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar, C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar, C:\Users\busla\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar, C:\Users\busla\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar, C:\Users\busla\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar, C:\Users\busla\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar, C:\Users\busla\.m2\repository\org\springframework\spring-core\6.1.11\spring-core-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-jcl\6.1.11\spring-jcl-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.4\spring-boot-starter-data-jpa-3.2.4.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.2\spring-boot-starter-aop-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\spring-aop\6.1.11\spring-aop-6.1.11.jar, C:\Users\busla\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.2\spring-boot-starter-jdbc-3.3.2.jar, C:\Users\busla\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar, C:\Users\busla\.m2\repository\org\springframework\spring-jdbc\6.1.11\spring-jdbc-6.1.11.jar, C:\Users\busla\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar, C:\Users\busla\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar, C:\Users\busla\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar, C:\Users\busla\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar, C:\Users\busla\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2\spring-data-jpa-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\data\spring-data-commons\3.3.2\spring-data-commons-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\spring-orm\6.1.11\spring-orm-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-context\6.1.11\spring-context-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-tx\6.1.11\spring-tx-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-beans\6.1.11\spring-beans-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-aspects\6.1.11\spring-aspects-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.2\spring-boot-starter-web-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.2\spring-boot-starter-json-3.3.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.2\spring-boot-starter-tomcat-3.3.2.jar, C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26\tomcat-embed-core-10.1.26.jar, C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26\tomcat-embed-el-10.1.26.jar, C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26\tomcat-embed-websocket-10.1.26.jar, C:\Users\busla\.m2\repository\org\springframework\spring-web\6.1.11\spring-web-6.1.11.jar, C:\Users\busla\.m2\repository\io\micrometer\micrometer-observation\1.13.2\micrometer-observation-1.13.2.jar, C:\Users\busla\.m2\repository\io\micrometer\micrometer-commons\1.13.2\micrometer-commons-1.13.2.jar, C:\Users\busla\.m2\repository\org\springframework\spring-webmvc\6.1.11\spring-webmvc-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-expression\6.1.11\spring-expression-6.1.11.jar, C:\Users\busla\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar, C:\Users\busla\.m2\repository\org\projectlombok\lombok-mapstruct-binding\0.2.0\lombok-mapstruct-binding-0.2.0.jar, C:\Users\busla\.m2\repository\org\mapstruct\mapstruct\1.6.3\mapstruct-1.6.3.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: org.backend:Backend:1.0 @ C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\pom.xml
+[DEBUG]   (f) projectArtifact = org.backend:Backend:jar:1.0
+[DEBUG]   (s) release = 17
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1d332cfc
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\generated-sources\annotations to compile source roots:
+  C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\java
+[DEBUG] New compile source roots:
+  C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\main\java
+  C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\generated-sources\annotations
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=9300, ConflictMarker.markTime=9500, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=3300, ConflictIdSorter.topsortTime=7500, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=93100, ConflictResolver.conflictItemCount=3, DfDependencyCollector.collectTime=5238700, DfDependencyCollector.transformTime=136600}
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Backend ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@3cd1a2f1]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources:default-testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: org.backend:Backend:1.0 @ C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\test\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1d332cfc
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] activemq.version: 6.1.2
+[DEBUG] angus-mail.version: 2.0.3
+[DEBUG] artemis.version: 2.33.0
+[DEBUG] aspectj.version: 1.9.22.1
+[DEBUG] assertj.version: 3.25.3
+[DEBUG] awaitility.version: 4.2.1
+[DEBUG] brave.version: 6.0.3
+[DEBUG] build-helper-maven-plugin.version: 3.5.0
+[DEBUG] byte-buddy.version: 1.14.18
+[DEBUG] cache2k.version: 2.6.1.Final
+[DEBUG] caffeine.version: 3.1.8
+[DEBUG] cassandra-driver.version: 4.18.1
+[DEBUG] classmate.version: 1.7.0
+[DEBUG] classworlds.conf: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\bin\mvnd-daemon.conf
+[DEBUG] commons-codec.version: 1.16.1
+[DEBUG] commons-dbcp2.version: 2.12.0
+[DEBUG] commons-lang3.version: 3.14.0
+[DEBUG] commons-pool.version: 1.6
+[DEBUG] commons-pool2.version: 2.12.0
+[DEBUG] couchbase-client.version: 3.6.2
+[DEBUG] crac.version: 1.4.0
+[DEBUG] cyclonedx-maven-plugin.version: 2.8.0
+[DEBUG] db2-jdbc.version: 11.5.9.0
+[DEBUG] dependency-management-plugin.version: 1.1.6
+[DEBUG] derby.version: 10.16.1.1
+[DEBUG] ehcache3.version: 3.10.8
+[DEBUG] elasticsearch-client.version: 8.13.4
+[DEBUG] env.=C:: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] env.=ExitCode: 00000001
+[DEBUG] env.ALLUSERSPROFILE: C:\ProgramData
+[DEBUG] env.APPDATA: C:\Users\busla\AppData\Roaming
+[DEBUG] env.COMPUTERNAME: ROM
+[DEBUG] env.ComSpec: C:\Windows\system32\cmd.exe
+[DEBUG] env.CommonProgramFiles: C:\Program Files\Common Files
+[DEBUG] env.CommonProgramFiles(x86): C:\Program Files (x86)\Common Files
+[DEBUG] env.CommonProgramW6432: C:\Program Files\Common Files
+[DEBUG] env.DriverData: C:\Windows\System32\Drivers\DriverData
+[DEBUG] env.HOMEDRIVE: C:
+[DEBUG] env.HOMEPATH: \Users\busla
+[DEBUG] env.LOCALAPPDATA: C:\Users\busla\AppData\Local
+[DEBUG] env.LOGONSERVER: \\ROM
+[DEBUG] env.NUMBER_OF_PROCESSORS: 12
+[DEBUG] env.OS: Windows_NT
+[DEBUG] env.OneDrive: C:\Users\busla\OneDrive
+[DEBUG] env.PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+[DEBUG] env.PROCESSOR_ARCHITECTURE: AMD64
+[DEBUG] env.PROCESSOR_IDENTIFIER: Intel64 Family 6 Model 165 Stepping 3, GenuineIntel
+[DEBUG] env.PROCESSOR_LEVEL: 6
+[DEBUG] env.PROCESSOR_REVISION: a503
+[DEBUG] env.PROMPT: $P$G
+[DEBUG] env.PSModulePath: C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+[DEBUG] env.PUBLIC: C:\Users\Public
+[DEBUG] env.PWD: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] env.Path: C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\bin;C:\Users\busla\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\busla\AppData\Local\Programs\Python\Python311\;C:\Users\busla\AppData\Local\Microsoft\WindowsApps;C:\Users\busla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\busla\.dotnet\tools;C:\msys64\ucrt64\bin;C:\Users\busla\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\busla\AppData\Roaming\npm
+[DEBUG] env.ProgramData: C:\ProgramData
+[DEBUG] env.ProgramFiles: C:\Program Files
+[DEBUG] env.ProgramFiles(x86): C:\Program Files (x86)
+[DEBUG] env.ProgramW6432: C:\Program Files
+[DEBUG] env.SESSIONNAME: Console
+[DEBUG] env.SystemDrive: C:
+[DEBUG] env.SystemRoot: C:\Windows
+[DEBUG] env.TEMP: C:\Users\busla\AppData\Local\Temp
+[DEBUG] env.TMP: C:\Users\busla\AppData\Local\Temp
+[DEBUG] env.USERDOMAIN: ROM
+[DEBUG] env.USERDOMAIN_ROAMINGPROFILE: ROM
+[DEBUG] env.USERNAME: busla
+[DEBUG] env.USERPROFILE: C:\Users\busla
+[DEBUG] env.maven: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\bin
+[DEBUG] env.windir: C:\Windows
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: \
+[DEBUG] flyway.version: 10.10.0
+[DEBUG] freemarker.version: 2.3.33
+[DEBUG] git-commit-id-maven-plugin.version: 8.0.2
+[DEBUG] glassfish-jaxb.version: 4.0.5
+[DEBUG] glassfish-jstl.version: 3.0.1
+[DEBUG] graphql-java.version: 22.1
+[DEBUG] groovy.version: 4.0.22
+[DEBUG] gson.version: 2.10.1
+[DEBUG] guice.disable.misplaced.annotation.check: true
+[DEBUG] h2.version: 2.2.224
+[DEBUG] hamcrest.version: 2.2
+[DEBUG] hazelcast.version: 5.4.0
+[DEBUG] hibernate-validator.version: 8.0.1.Final
+[DEBUG] hibernate.version: 6.5.2.Final
+[DEBUG] hikaricp.version: 5.1.0
+[DEBUG] hsqldb.version: 2.7.3
+[DEBUG] htmlunit.version: 2.70.0
+[DEBUG] httpasyncclient.version: 4.1.5
+[DEBUG] httpclient5.version: 5.3.1
+[DEBUG] httpcore.version: 4.4.16
+[DEBUG] httpcore5.version: 5.2.5
+[DEBUG] infinispan.version: 15.0.5.Final
+[DEBUG] influxdb-java.version: 2.24
+[DEBUG] jackson-bom.version: 2.17.2
+[DEBUG] jakarta-activation.version: 2.1.3
+[DEBUG] jakarta-annotation.version: 2.1.1
+[DEBUG] jakarta-inject.version: 2.0.1
+[DEBUG] jakarta-jms.version: 3.1.0
+[DEBUG] jakarta-json-bind.version: 3.0.1
+[DEBUG] jakarta-json.version: 2.1.3
+[DEBUG] jakarta-mail.version: 2.1.3
+[DEBUG] jakarta-management.version: 1.1.4
+[DEBUG] jakarta-persistence.version: 3.1.0
+[DEBUG] jakarta-servlet-jsp-jstl.version: 3.0.0
+[DEBUG] jakarta-servlet.version: 6.0.0
+[DEBUG] jakarta-transaction.version: 2.0.1
+[DEBUG] jakarta-validation.version: 3.0.2
+[DEBUG] jakarta-websocket.version: 2.1.1
+[DEBUG] jakarta-ws-rs.version: 3.1.0
+[DEBUG] jakarta-xml-bind.version: 4.0.2
+[DEBUG] jakarta-xml-soap.version: 3.0.2
+[DEBUG] jakarta-xml-ws.version: 4.0.2
+[DEBUG] janino.version: 3.1.12
+[DEBUG] java.class.path: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\boot\plexus-classworlds-2.8.0.jar
+[DEBUG] java.class.version: 62.0
+[DEBUG] java.home: C:\Program Files\Java\jdk-18.0.2.1
+[DEBUG] java.io.tmpdir: C:\Users\busla\AppData\Local\Temp\
+[DEBUG] java.library.path: C:\Program Files\Java\jdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\busla\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\busla\AppData\Local\Programs\Python\Python311\;C:\Users\busla\AppData\Local\Microsoft\WindowsApps;C:\Users\busla\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\busla\.dotnet\tools;C:\msys64\ucrt64\bin;C:\Users\busla\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\busla\AppData\Roaming\npm;.
+[DEBUG] java.runtime.name: Java(TM) SE Runtime Environment
+[DEBUG] java.runtime.version: 18.0.2.1+1-1
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 18
+[DEBUG] java.util.logging.config.file: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\conf/logging/java.util.logging.properties
+[DEBUG] java.vendor: Oracle Corporation
+[DEBUG] java.vendor.url: https://java.oracle.com/
+[DEBUG] java.vendor.url.bug: https://bugreport.java.com/bugreport/
+[DEBUG] java.version: 18.0.2.1
+[DEBUG] java.version.date: 2022-08-18
+[DEBUG] java.vm.compressedOopsMode: Zero based
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 18
+[DEBUG] java.vm.vendor: Oracle Corporation
+[DEBUG] java.vm.version: 18.0.2.1+1-1
+[DEBUG] javax-cache.version: 1.1.1
+[DEBUG] javax-money.version: 1.1
+[DEBUG] jaxen.version: 2.0.0
+[DEBUG] jaybird.version: 5.0.5.java11
+[DEBUG] jboss-logging.version: 3.5.3.Final
+[DEBUG] jdk.debug: release
+[DEBUG] jdk.java.options: --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/sun.net.www.protocol.jar=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED
+[DEBUG] jdom2.version: 2.0.6.1
+[DEBUG] jedis.version: 5.0.2
+[DEBUG] jersey.version: 3.1.7
+[DEBUG] jetty-reactive-httpclient.version: 4.0.5
+[DEBUG] jetty.version: 12.0.11
+[DEBUG] jmustache.version: 1.16
+[DEBUG] jooq.version: 3.19.10
+[DEBUG] json-path.version: 2.9.0
+[DEBUG] json-smart.version: 2.5.1
+[DEBUG] jsonassert.version: 1.5.3
+[DEBUG] jtds.version: 1.3.1
+[DEBUG] junit-jupiter.version: 5.10.3
+[DEBUG] junit.version: 4.13.2
+[DEBUG] kafka.version: 3.7.1
+[DEBUG] kotlin-coroutines.version: 1.8.1
+[DEBUG] kotlin-serialization.version: 1.6.3
+[DEBUG] kotlin.version: 1.9.24
+[DEBUG] lettuce.version: 6.3.2.RELEASE
+[DEBUG] line.separator: 
+[DEBUG] liquibase.version: 4.27.0
+[DEBUG] log4j2.version: 2.23.1
+[DEBUG] logback.version: 1.5.6
+[DEBUG] lombok-mapstruct-binding.version: 0.2.0
+[DEBUG] lombok.version: 1.18.34
+[DEBUG] mariadb.version: 3.3.3
+[DEBUG] maven-antrun-plugin.version: 3.1.0
+[DEBUG] maven-assembly-plugin.version: 3.7.1
+[DEBUG] maven-clean-plugin.version: 3.3.2
+[DEBUG] maven-compiler-plugin.version: 3.13.0
+[DEBUG] maven-dependency-plugin.version: 3.6.1
+[DEBUG] maven-deploy-plugin.version: 3.1.2
+[DEBUG] maven-enforcer-plugin.version: 3.4.1
+[DEBUG] maven-failsafe-plugin.version: 3.2.5
+[DEBUG] maven-help-plugin.version: 3.4.1
+[DEBUG] maven-install-plugin.version: 3.1.2
+[DEBUG] maven-invoker-plugin.version: 3.6.1
+[DEBUG] maven-jar-plugin.version: 3.4.2
+[DEBUG] maven-javadoc-plugin.version: 3.6.3
+[DEBUG] maven-resources-plugin.version: 3.3.1
+[DEBUG] maven-shade-plugin.version: 3.5.3
+[DEBUG] maven-source-plugin.version: 3.3.1
+[DEBUG] maven-surefire-plugin.version: 3.2.5
+[DEBUG] maven-war-plugin.version: 3.4.0
+[DEBUG] maven.build.timestamp: 2025-04-05T20:57:02Z
+[DEBUG] maven.build.version: Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+[DEBUG] maven.compiler.release: 17
+[DEBUG] maven.conf: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn\conf
+[DEBUG] maven.home: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64\mvn
+[DEBUG] maven.multiModuleProjectDirectory: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] maven.version: 3.9.9
+[DEBUG] micrometer-tracing.version: 1.3.2
+[DEBUG] micrometer.version: 1.13.2
+[DEBUG] mockito.version: 5.11.0
+[DEBUG] mongodb.version: 5.0.1
+[DEBUG] mssql-jdbc.version: 12.6.3.jre11
+[DEBUG] mvnd.coreExtensions: 
+[DEBUG] mvnd.daemonStorage: C:\Users\busla\.m2\mvnd\registry\1.0.2
+[DEBUG] mvnd.debug: false
+[DEBUG] mvnd.debug.address: 8000
+[DEBUG] mvnd.duplicateDaemonGracePeriod: 10s
+[DEBUG] mvnd.enableAssertions: false
+[DEBUG] mvnd.expirationCheckDelay: 10s
+[DEBUG] mvnd.extClasspath: 
+[DEBUG] mvnd.home: C:\Users\busla\OneDrive\Рабочий стол\maven-mvnd-1.0.2-windows-amd64
+[DEBUG] mvnd.id: 2bed350a
+[DEBUG] mvnd.idleTimeout: 3h
+[DEBUG] mvnd.java.home: C:\Program Files\Java\jdk-18.0.2.1
+[DEBUG] mvnd.keepAlive: 100ms
+[DEBUG] mvnd.noDaemon: false
+[DEBUG] mvnd.registry: C:\Users\busla\.m2\mvnd\registry\1.0.2\registry.bin
+[DEBUG] mvnd.socketFamily: inet
+[DEBUG] mvnd.terminalWidth: 120
+[DEBUG] mysql.version: 8.3.0
+[DEBUG] native-build-tools-plugin.version: 0.10.2
+[DEBUG] native.encoding: Cp1251
+[DEBUG] nekohtml.version: 1.9.22
+[DEBUG] neo4j-java-driver.version: 5.22.0
+[DEBUG] netty.version: 4.1.111.Final
+[DEBUG] okhttp.version: 4.12.0
+[DEBUG] opentelemetry.version: 1.37.0
+[DEBUG] oracle-database.version: 21.9.0.0
+[DEBUG] oracle-r2dbc.version: 1.2.0
+[DEBUG] org.flywaydb.version: 10.18.0
+[DEBUG] org.lombok.version: 1.18.34
+[DEBUG] org.mapstruct.version: 1.6.3
+[DEBUG] org.slf4j.simpleLogger.logFile: C:\Users\busla\.m2\mvnd\registry\1.0.2\daemon-2bed350a.log
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Windows 10
+[DEBUG] os.version: 10.0
+[DEBUG] path.separator: ;
+[DEBUG] pooled-jms.version: 3.1.6
+[DEBUG] postgresql.version: 42.7.3
+[DEBUG] project.baseUri: file:/C:/Users/busla/source/repos/InteractivePhilosophyMap/Back/Backend/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] prometheus-client.version: 1.2.1
+[DEBUG] prometheus-simpleclient.version: 0.16.0
+[DEBUG] pulsar-reactive.version: 0.5.6
+[DEBUG] pulsar.version: 3.2.3
+[DEBUG] quartz.version: 2.3.2
+[DEBUG] querydsl.version: 5.1.0
+[DEBUG] r2dbc-h2.version: 1.0.0.RELEASE
+[DEBUG] r2dbc-mariadb.version: 1.2.1
+[DEBUG] r2dbc-mssql.version: 1.0.2.RELEASE
+[DEBUG] r2dbc-mysql.version: 1.1.3
+[DEBUG] r2dbc-pool.version: 1.0.1.RELEASE
+[DEBUG] r2dbc-postgresql.version: 1.0.5.RELEASE
+[DEBUG] r2dbc-proxy.version: 1.1.5.RELEASE
+[DEBUG] r2dbc-spi.version: 1.0.0.RELEASE
+[DEBUG] rabbit-amqp-client.version: 5.21.0
+[DEBUG] rabbit-stream-client.version: 0.15.0
+[DEBUG] reactive-streams.version: 1.0.4
+[DEBUG] reactor-bom.version: 2023.0.8
+[DEBUG] resource.delimiter: @
+[DEBUG] rest-assured.version: 5.4.0
+[DEBUG] rsocket.version: 1.1.3
+[DEBUG] rxjava3.version: 3.1.8
+[DEBUG] saaj-impl.version: 3.0.4
+[DEBUG] selenium-htmlunit.version: 4.13.0
+[DEBUG] selenium.version: 4.19.1
+[DEBUG] sendgrid.version: 4.10.2
+[DEBUG] slf4j.version: 2.0.13
+[DEBUG] snakeyaml.version: 2.2
+[DEBUG] spring-amqp.version: 3.1.6
+[DEBUG] spring-authorization-server.version: 1.3.1
+[DEBUG] spring-batch.version: 5.1.2
+[DEBUG] spring-boot.run.main-class: ${start-class}
+[DEBUG] spring-data-bom.version: 2024.0.2
+[DEBUG] spring-framework.version: 6.1.11
+[DEBUG] spring-graphql.version: 1.3.2
+[DEBUG] spring-hateoas.version: 2.3.1
+[DEBUG] spring-integration.version: 6.3.2
+[DEBUG] spring-kafka.version: 3.2.2
+[DEBUG] spring-ldap.version: 3.2.4
+[DEBUG] spring-pulsar.version: 1.1.2
+[DEBUG] spring-restdocs.version: 3.0.1
+[DEBUG] spring-retry.version: 2.0.7
+[DEBUG] spring-security.version: 6.3.1
+[DEBUG] spring-session.version: 3.3.1
+[DEBUG] spring-ws.version: 4.0.11
+[DEBUG] sqlite-jdbc.version: 3.45.3.0
+[DEBUG] style.color: never
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: C:\Program Files\Java\jdk-18.0.2.1\bin
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.cpu.isalist: amd64
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: Cp1251
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] sun.os.patch.level: 
+[DEBUG] testcontainers.version: 1.19.8
+[DEBUG] thymeleaf-extras-data-attribute.version: 2.0.1
+[DEBUG] thymeleaf-extras-springsecurity.version: 3.1.2.RELEASE
+[DEBUG] thymeleaf-layout-dialect.version: 3.3.0
+[DEBUG] thymeleaf.version: 3.1.2.RELEASE
+[DEBUG] tomcat.version: 10.1.26
+[DEBUG] unboundid-ldapsdk.version: 6.0.11
+[DEBUG] undertow.version: 2.3.13.Final
+[DEBUG] user.country: RU
+[DEBUG] user.dir: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] user.home: C:\Users\busla
+[DEBUG] user.language: ru
+[DEBUG] user.name: busla
+[DEBUG] user.script: 
+[DEBUG] user.timezone: Europe/Astrakhan
+[DEBUG] user.variant: 
+[DEBUG] versions-maven-plugin.version: 2.16.2
+[DEBUG] webjars-locator-core.version: 0.58
+[DEBUG] wsdl4j.version: 1.6.3
+[DEBUG] xml-maven-plugin.version: 1.1.0
+[DEBUG] xmlunit2.version: 2.9.1
+[DEBUG] yasson.version: 3.0.3
+[DEBUG] zipkin-reporter.version: 3.4.0
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\test\resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\test\resources
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ Backend ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@3cd1a2f1]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile:default-testCompile' with basic configurator -->
+[DEBUG]   (s) groupId = org.mapstruct
+[DEBUG]   (s) artifactId = mapstruct-processor
+[DEBUG]   (s) version = 1.6.3
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok
+[DEBUG]   (s) version = 1.18.34
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok-mapstruct-binding
+[DEBUG]   (s) version = 0.2.0
+[DEBUG]   (f) annotationProcessorPaths = [org.mapstruct:mapstruct-processor:1.6.3.jar, org.projectlombok:lombok:1.18.34.jar, org.projectlombok:lombok-mapstruct-binding:0.2.0.jar]
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG]   (f) buildDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target
+[DEBUG]   (f) compileSourceRoots = [C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\src\test\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac-test
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\generated-test-sources\test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\test-classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: org.backend:Backend:1.0 @ C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\pom.xml
+[DEBUG]   (s) release = 17
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1d332cfc
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) testPath = [C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\test-classes, C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes, C:\Users\busla\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar, C:\Users\busla\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.2\spring-boot-starter-test-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.2\spring-boot-starter-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot\3.3.2\spring-boot-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2\spring-boot-autoconfigure-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.2\spring-boot-starter-logging-3.3.2.jar, C:\Users\busla\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar, C:\Users\busla\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar, C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar, C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar, C:\Users\busla\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar, C:\Users\busla\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar, C:\Users\busla\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-test\3.3.2\spring-boot-test-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.2\spring-boot-test-autoconfigure-3.3.2.jar, C:\Users\busla\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar, C:\Users\busla\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar, C:\Users\busla\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar, C:\Users\busla\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar, C:\Users\busla\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar, C:\Users\busla\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar, C:\Users\busla\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar, C:\Users\busla\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar, C:\Users\busla\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar, C:\Users\busla\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar, C:\Users\busla\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar, C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar, C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar, C:\Users\busla\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar, C:\Users\busla\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar, C:\Users\busla\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar, C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar, C:\Users\busla\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar, C:\Users\busla\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar, C:\Users\busla\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar, C:\Users\busla\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18\byte-buddy-agent-1.14.18.jar, C:\Users\busla\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar, C:\Users\busla\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar, C:\Users\busla\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar, C:\Users\busla\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar, C:\Users\busla\.m2\repository\org\springframework\spring-core\6.1.11\spring-core-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-jcl\6.1.11\spring-jcl-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-test\6.1.11\spring-test-6.1.11.jar, C:\Users\busla\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.4\spring-boot-starter-data-jpa-3.2.4.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.2\spring-boot-starter-aop-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\spring-aop\6.1.11\spring-aop-6.1.11.jar, C:\Users\busla\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.2\spring-boot-starter-jdbc-3.3.2.jar, C:\Users\busla\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar, C:\Users\busla\.m2\repository\org\springframework\spring-jdbc\6.1.11\spring-jdbc-6.1.11.jar, C:\Users\busla\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar, C:\Users\busla\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar, C:\Users\busla\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar, C:\Users\busla\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar, C:\Users\busla\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar, C:\Users\busla\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar, C:\Users\busla\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar, C:\Users\busla\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar, C:\Users\busla\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar, C:\Users\busla\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar, C:\Users\busla\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar, C:\Users\busla\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar, C:\Users\busla\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar, C:\Users\busla\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2\spring-data-jpa-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\data\spring-data-commons\3.3.2\spring-data-commons-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\spring-orm\6.1.11\spring-orm-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-context\6.1.11\spring-context-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-tx\6.1.11\spring-tx-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-beans\6.1.11\spring-beans-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-aspects\6.1.11\spring-aspects-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.2\spring-boot-starter-web-3.3.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.2\spring-boot-starter-json-3.3.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar, C:\Users\busla\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar, C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.2\spring-boot-starter-tomcat-3.3.2.jar, C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26\tomcat-embed-core-10.1.26.jar, C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26\tomcat-embed-el-10.1.26.jar, C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26\tomcat-embed-websocket-10.1.26.jar, C:\Users\busla\.m2\repository\org\springframework\spring-web\6.1.11\spring-web-6.1.11.jar, C:\Users\busla\.m2\repository\io\micrometer\micrometer-observation\1.13.2\micrometer-observation-1.13.2.jar, C:\Users\busla\.m2\repository\io\micrometer\micrometer-commons\1.13.2\micrometer-commons-1.13.2.jar, C:\Users\busla\.m2\repository\org\springframework\spring-webmvc\6.1.11\spring-webmvc-6.1.11.jar, C:\Users\busla\.m2\repository\org\springframework\spring-expression\6.1.11\spring-expression-6.1.11.jar, C:\Users\busla\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar, C:\Users\busla\.m2\repository\org\projectlombok\lombok-mapstruct-binding\0.2.0\lombok-mapstruct-binding-0.2.0.jar, C:\Users\busla\.m2\repository\org\mapstruct\mapstruct\1.6.3\mapstruct-1.6.3.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) useModulePath = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.3.2:run (default-cli) < test-compile @ Backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.2:run (default-cli) @ Backend ---
+[DEBUG] Loading mojo org.springframework.boot:spring-boot-maven-plugin:3.3.2:run from plugin realm ClassRealm[plugin>org.springframework.boot:spring-boot-maven-plugin:3.3.2, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@3cd1a2f1]
+[DEBUG] Configuring mojo execution 'org.springframework.boot:spring-boot-maven-plugin:3.3.2:run:default-cli' with basic configurator -->
+[DEBUG]   (f) addResources = false
+[DEBUG]   (f) additionalClasspathElements = []
+[DEBUG]   (f) agents = []
+[DEBUG]   (f) classesDirectory = C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes
+[DEBUG]   (f) directories = []
+[DEBUG]   (f) excludes = []
+[DEBUG]   (f) includes = []
+[DEBUG]   (f) optimizedLaunch = true
+[DEBUG]   (f) profiles = []
+[DEBUG]   (f) project = MavenProject: org.backend:Backend:1.0 @ C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1d332cfc
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) useTestClasspath = false
+[DEBUG] -- end configuration --
+[INFO] Attaching agents: []
+[DEBUG] JVM argument: -XX:TieredStopAtLevel=1
+[DEBUG] Classpath for forked process: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes;C:\Users\busla\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\busla\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot\3.3.2\spring-boot-3.3.2.jar;C:\Users\busla\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2\spring-boot-autoconfigure-3.3.2.jar;C:\Users\busla\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\busla\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\busla\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\busla\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\busla\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\busla\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\busla\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\busla\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\busla\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\busla\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\busla\.m2\repository\org\springframework\spring-core\6.1.11\spring-core-6.1.11.jar;C:\Users\busla\.m2\repository\org\springframework\spring-jcl\6.1.11\spring-jcl-6.1.11.jar;C:\Users\busla\.m2\repository\org\springframework\spring-aop\6.1.11\spring-aop-6.1.11.jar;C:\Users\busla\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\busla\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\busla\.m2\repository\org\springframework\spring-jdbc\6.1.11\spring-jdbc-6.1.11.jar;C:\Users\busla\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\busla\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\busla\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\busla\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\busla\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\busla\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\busla\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\busla\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\busla\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\busla\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\busla\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\busla\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\busla\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\busla\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\busla\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2\spring-data-jpa-3.3.2.jar;C:\Users\busla\.m2\repository\org\springframework\data\spring-data-commons\3.3.2\spring-data-commons-3.3.2.jar;C:\Users\busla\.m2\repository\org\springframework\spring-orm\6.1.11\spring-orm-6.1.11.jar;C:\Users\busla\.m2\repository\org\springframework\spring-context\6.1.11\spring-context-6.1.11.jar;C:\Users\busla\.m2\repository\org\springframework\spring-tx\6.1.11\spring-tx-6.1.11.jar;C:\Users\busla\.m2\repository\org\springframework\spring-beans\6.1.11\spring-beans-6.1.11.jar;C:\Users\busla\.m2\repository\org\springframework\spring-aspects\6.1.11\spring-aspects-6.1.11.jar;C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\busla\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\busla\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\busla\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26\tomcat-embed-core-10.1.26.jar;C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26\tomcat-embed-el-10.1.26.jar;C:\Users\busla\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26\tomcat-embed-websocket-10.1.26.jar;C:\Users\busla\.m2\repository\org\springframework\spring-web\6.1.11\spring-web-6.1.11.jar;C:\Users\busla\.m2\repository\io\micrometer\micrometer-observation\1.13.2\micrometer-observation-1.13.2.jar;C:\Users\busla\.m2\repository\io\micrometer\micrometer-commons\1.13.2\micrometer-commons-1.13.2.jar;C:\Users\busla\.m2\repository\org\springframework\spring-webmvc\6.1.11\spring-webmvc-6.1.11.jar;C:\Users\busla\.m2\repository\org\springframework\spring-expression\6.1.11\spring-expression-6.1.11.jar;C:\Users\busla\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\busla\.m2\repository\org\projectlombok\lombok-mapstruct-binding\0.2.0\lombok-mapstruct-binding-0.2.0.jar;C:\Users\busla\.m2\repository\org\mapstruct\mapstruct\1.6.3\mapstruct-1.6.3.jar
+[DEBUG] Application arguments: 
+[DEBUG] Working directory: C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend
+[DEBUG] Java arguments: -XX:TieredStopAtLevel=1 -cp @C:\Users\busla\AppData\Local\Temp\spring-boot-15935872444157804661.argfile org.backend.App
+[DEBUG] Environment variables: 
+[INFO] [stdout] 
+[INFO] [stdout]   .   ____          _            __ _ _
+[INFO] [stdout]  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[INFO] [stdout] ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[INFO] [stdout]  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[INFO] [stdout]   '  |____| .__|_| |_|_| |_\__, | / / / /
+[INFO] [stdout]  =========|_|==============|___/=/_/_/_/
+[INFO] [stdout] 
+[INFO] [stdout]  :: Spring Boot ::                (v3.3.2)
+[INFO] [stdout] 
+[INFO] [stdout] 2025-04-06T00:57:03.043+04:00  INFO 25296 --- [           main] org.backend.App                          : Starting App using Java 18.0.2.1 with PID 25296 (C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend\target\classes started by busla in C:\Users\busla\source\repos\InteractivePhilosophyMap\Back\Backend)
+[INFO] [stdout] 2025-04-06T00:57:03.045+04:00  INFO 25296 --- [           main] org.backend.App                          : No active profile set, falling back to 1 default profile: "default"
+[INFO] [stdout] 2025-04-06T00:57:03.455+04:00  INFO 25296 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO] [stdout] 2025-04-06T00:57:03.505+04:00  INFO 25296 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+[INFO] [stdout] 2025-04-06T00:57:03.870+04:00  INFO 25296 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8006 (http)
+[INFO] [stdout] 2025-04-06T00:57:03.881+04:00  INFO 25296 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[INFO] [stdout] 2025-04-06T00:57:03.881+04:00  INFO 25296 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+[INFO] [stdout] 2025-04-06T00:57:03.931+04:00  INFO 25296 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[INFO] [stdout] 2025-04-06T00:57:03.932+04:00  INFO 25296 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
+[INFO] [stdout] 2025-04-06T00:57:04.048+04:00  INFO 25296 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO] [stdout] 2025-04-06T00:57:04.093+04:00  INFO 25296 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+[INFO] [stdout] 2025-04-06T00:57:04.118+04:00  INFO 25296 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+[INFO] [stdout] 2025-04-06T00:57:04.343+04:00  INFO 25296 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO] [stdout] 2025-04-06T00:57:04.364+04:00  INFO 25296 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[INFO] [stdout] 2025-04-06T00:57:04.607+04:00  INFO 25296 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23b71d24
+[INFO] [stdout] 2025-04-06T00:57:04.608+04:00  INFO 25296 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[INFO] [stdout] 2025-04-06T00:57:05.189+04:00  INFO 25296 --- [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: org.backend.domain.entity.Direction (class must be instantiated by Interceptor)
+[INFO] [stdout] 2025-04-06T00:57:05.216+04:00  INFO 25296 --- [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: org.backend.domain.entity.Museum (class must be instantiated by Interceptor)
+[INFO] [stdout] 2025-04-06T00:57:05.227+04:00  INFO 25296 --- [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: org.backend.domain.entity.Human (class must be instantiated by Interceptor)
+[INFO] [stdout] 2025-04-06T00:57:05.382+04:00  INFO 25296 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO] [stdout] 2025-04-06T00:57:05.406+04:00 ERROR 25296 --- [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [direction]
+[INFO] [stdout] 2025-04-06T00:57:05.406+04:00  WARN 25296 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [direction]
+[INFO] [stdout] 2025-04-06T00:57:05.407+04:00  INFO 25296 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[INFO] [stdout] 2025-04-06T00:57:05.424+04:00  INFO 25296 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] [stdout] 2025-04-06T00:57:05.426+04:00  INFO 25296 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[INFO] [stdout] 2025-04-06T00:57:05.434+04:00  INFO 25296 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+[INFO] [stdout] 
+[INFO] [stdout] Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[INFO] [stdout] 2025-04-06T00:57:05.446+04:00 ERROR 25296 --- [           main] o.s.boot.SpringApplication               : Application run failed
+[INFO] [stdout] 
+[INFO] [stdout] org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [direction]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+[INFO] [stdout] 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+[INFO] [stdout] 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+[INFO] [stdout] 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+[INFO] [stdout] 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+[INFO] [stdout] 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+[INFO] [stdout] 	at org.backend.App.main(App.java:11) ~[classes/:na]
+[INFO] [stdout] Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [direction]
+[INFO] [stdout] 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	... 15 common frames omitted
+[INFO] [stdout] Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [direction]
+[INFO] [stdout] 	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:135) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:46) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:98) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:289) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+[INFO] [stdout] 	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+[INFO] [stdout] 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+[INFO] [stdout] 	... 19 common frames omitted
+[INFO] [stdout] 
+[DEBUG] FAILURE build of project org.backend:Backend
+[DEBUG] Builder state: blocked=0 finished=1 ready-or-running=0 
+[DEBUG] ------------------------------------------------------------------------
+[DEBUG] Build Time Summary:
+[DEBUG] ------------------------------------------------------------------------
+[DEBUG] Backend [3,070s]
+[DEBUG]   maven-resources-plugin:resources (default-resources) ..... [0,009s]
+[DEBUG]   maven-compiler-plugin:compile (default-compile) .......... [0,028s]
+[DEBUG]   maven-resources-plugin:testResources (default-testResource [0,002s]
+[DEBUG]   maven-compiler-plugin:testCompile (default-testCompile) .. [0,002s]
+[DEBUG]   spring-boot-maven-plugin:run (default-cli) ............... [3,028s]
+[DEBUG] ------------------------------------------------------------------------
+[DEBUG]   spring-boot-maven-plugin:run (default-cli) ............... [3,028s]
+[DEBUG]   maven-compiler-plugin:compile (default-compile) .......... [0,028s]
+[DEBUG]   maven-resources-plugin:resources (default-resources) ..... [0,009s]
+[DEBUG]   maven-compiler-plugin:testCompile (default-testCompile) .. [0,002s]
+[DEBUG]   maven-resources-plugin:testResources (default-testResource [0,002s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.363 s (Wall Clock)
+[INFO] Finished at: 2025-04-06T00:57:05+04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.2:run (default-cli) on project Backend: Process terminated with exit code: 1 -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.2:run (default-cli) on project Backend: Process terminated with exit code: 1
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at io.takari.maven.builder.smart.SmartBuilderImpl.buildProject (SmartBuilderImpl.java:206)
+    at io.takari.maven.builder.smart.SmartBuilderImpl$ProjectBuildTask.run (SmartBuilderImpl.java:71)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:539)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1136)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:635)
+    at java.lang.Thread.run (Thread.java:833)
+Caused by: org.apache.maven.plugin.MojoExecutionException: Process terminated with exit code: 1
+    at org.springframework.boot.maven.JavaProcessExecutor.run (JavaProcessExecutor.java:74)
+    at org.springframework.boot.maven.RunMojo.run (RunMojo.java:76)
+    at org.springframework.boot.maven.AbstractRunMojo.run (AbstractRunMojo.java:251)
+    at org.springframework.boot.maven.AbstractRunMojo.execute (AbstractRunMojo.java:214)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at io.takari.maven.builder.smart.SmartBuilderImpl.buildProject (SmartBuilderImpl.java:206)
+    at io.takari.maven.builder.smart.SmartBuilderImpl$ProjectBuildTask.run (SmartBuilderImpl.java:71)
+    at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:539)
+    at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1136)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:635)
+    at java.lang.Thread.run (Thread.java:833)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
